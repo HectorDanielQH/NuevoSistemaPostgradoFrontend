@@ -1,0 +1,176 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .consejopostgrado{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        color: #00255c;
+    }
+    .tituloconsejo{
+        width: 80%;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    .contenedorimagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorimagen img{
+        width:18rem;
+    }
+    .contenidoconsejo{
+        width: 80%;
+        text-align: justify;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .consejopostgrado{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        color: #00255c;
+    }
+    .tituloconsejo{
+        width: 80%;
+        text-align: center;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    .contenedorimagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorimagen img{
+        width: 30rem;
+    }
+    .contenidoconsejo{
+        width: 80%;
+        text-align: justify;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .consejopostgrado{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        color: #00255c;
+    }
+    .tituloconsejo{
+        width: 80%;
+        text-align: center;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    .contenedorimagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorimagen img{
+        width: 30rem;
+    }
+    .contenidoconsejo{
+        width: 80%;
+        text-align: justify;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .consejopostgrado{
+        width: 100%;
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        color: #00255c;
+    }
+    .tituloconsejo{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    .contenedorimagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorimagen img{
+        width: 35rem;
+        margin: 1rem 0;
+    }
+    .contenidoconsejo{
+        width: 80%;
+        text-align: justify;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .consejopostgrado{
+        width: 100%;
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        color: #00255c;
+    }
+    .tituloconsejo{
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    .contenedorimagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorimagen img{
+        width: 40rem;
+        margin: 1rem 0;
+    }
+    .contenidoconsejo{
+        width: 80%;
+        text-align: justify;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+}

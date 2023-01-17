@@ -1,0 +1,525 @@
+.footer{
+    width: 100%;
+    z-index: -10;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .convenio{
+        background-color: #ffffff70;
+        color: rgb(0, 34, 146);
+        padding: 20px;
+        text-align: center;
+        z-index: -8;
+    }
+    .convenio h2{
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        z-index: -7;
+    }
+    .convenio div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0 10px  0;
+        z-index: -6;
+    }
+    .logoconvenio1,.logoconvenio2{
+        width: 8rem;
+        transition: .2s ease-in-out;
+    }
+    /**hoover*/
+    .logoconvenio1:hover,.logoconvenio2:hover{
+        /**iluminacion borde dark*/
+        box-shadow: 0 0 0 4px #0000009d;
+        border-radius: 50%;
+    
+    }
+    .direccionfooter{
+        width: 100%;
+        background-color: #002f5a;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 4rem 0;
+    }
+    .footermapa{
+        width:100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+    }
+    .footermapa h2{
+        width: 100%;
+        font-weight: 400;
+        text-align: center;
+    }
+    .footermapa iframe{
+        padding-top: 25px;
+        width: 100%;
+        height: 350px;
+        border-radius: 5px;
+    }
+    .footercontacto{
+        width: 100%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footercontacto img{
+        display: none;
+    }
+    .footercontacto h2{
+        width: 100%;
+        font-weight: 400;
+        text-align: center;
+        margin: 20px 0 15px 0;
+    }
+    .contactoCuerpo{
+        width: 90%;
+        align-items: center;
+        text-align: justify;
+    }
+    .contactoCuerpo p{
+        margin: 0 0 15px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .convenio{
+        background-color: #ffffff70;
+        color: rgb(0, 34, 146);
+        padding: 20px;
+        text-align: center;
+        z-index: -8;
+    }
+    .convenio h2{
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        z-index: -7;
+    }
+    .convenio div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0 10px  0;
+        z-index: -6;
+    }
+    .logoconvenio1,.logoconvenio2{
+        width: 12rem;
+        transition: .2s ease-in-out;
+    }
+    /**hoover*/
+    .logoconvenio1:hover,.logoconvenio2:hover{
+        /**iluminacion borde dark*/
+        box-shadow: 0 0 0 4px #0000009d;
+        border-radius: 50%;
+    
+    }
+    .direccionfooter{
+        width: 100%;
+        height: 450px;
+        background-color: #002f5a;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 4rem 0;
+    }
+    .footermapa{
+        width:45%;
+        height: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+    }
+    .footermapa h2{
+        width: 100%;
+        font-size: 90%;
+        font-weight: 400;
+        text-align: center;
+    }
+    .footermapa iframe{
+        padding-top: 15px;
+        width: 100%;
+        height: 450px;
+        border-radius: 35px;
+    }
+    .footercontacto{
+        width: 45%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footercontacto h2{
+        width: 100%;
+        font-size: 90%;
+        font-weight: 400;
+        text-align: center;
+        margin: 20px 0 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footercontacto img{
+        width: 50%;
+        border-radius: 10%;
+    }
+    .contactoCuerpo{
+        width: 90%;
+        align-items: center;
+        text-align: justify;
+    }
+    .contactoCuerpo p{
+        margin: 0 0 10px 0;
+        font-size: 80%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .convenio{
+        background-color: #ffffff70;
+        color: rgb(0, 34, 146);
+        padding: 20px;
+        text-align: center;
+        z-index: -8;
+    }
+    .convenio h2{
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        z-index: -7;
+    }
+    .convenio div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0 10px  0;
+        z-index: -6;
+    }
+    .logoconvenio1,.logoconvenio2{
+        width: 12rem;
+        transition: .2s ease-in-out;
+    }
+    /**hoover*/
+    .logoconvenio1:hover,.logoconvenio2:hover{
+        /**iluminacion borde dark*/
+        box-shadow: 0 0 0 4px #0000009d;
+        border-radius: 50%;
+    
+    }
+    .direccionfooter{
+        width: 100%;
+        height: 450px;
+        background-color: #002f5a;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 4rem 0;
+    }
+    .footermapa{
+        width:45%;
+        height: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+    }
+    .footermapa h2{
+        width: 100%;
+        font-size: 90%;
+        font-weight: 400;
+        text-align: center;
+    }
+    .footermapa iframe{
+        padding-top: 15px;
+        width: 100%;
+        height: 450px;
+        border-radius: 40px;
+    }
+    .footercontacto{
+        width: 45%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footercontacto h2{
+        width: 100%;
+        font-size: 90%;
+        font-weight: 400;
+        text-align: center;
+        margin: 20px 0 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footercontacto img{
+        width: 45%;
+        border-radius: 10%;
+    }
+    .contactoCuerpo{
+        width: 90%;
+        align-items: center;
+        text-align: justify;
+    }
+    .contactoCuerpo p{
+        margin: 0 0 10px 0;
+        font-size: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .convenio{
+        background-color: #ffffff70;
+        color: rgb(0, 34, 146);
+        padding: 20px;
+        text-align: center;
+        z-index: -8;
+    }
+    .convenio h2{
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        z-index: -7;
+    }
+    .convenio div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0 10px  0;
+        z-index: -6;
+    }
+    .logoconvenio1,.logoconvenio2{
+        width: 12rem;
+        transition: .2s ease-in-out;
+    }
+    /**hoover*/
+    .logoconvenio1:hover,.logoconvenio2:hover{
+        /**iluminacion borde dark*/
+        box-shadow: 0 0 0 4px #0000009d;
+        border-radius: 50%;
+    
+    }
+    .direccionfooter{
+        width: 100%;
+        height: 450px;
+        background-color: #002f5a;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 5rem 0;
+    }
+    .footermapa{
+        width:45%;
+        height: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+    }
+    .footermapa h2{
+        width: 100%;
+        font-size: 100%;
+        font-weight: 400;
+        text-align: center;
+    }
+    .footermapa iframe{
+        padding-top: 15px;
+        width: 100%;
+        height: 450px;
+        border-radius: 40px;
+    }
+    .footercontacto{
+        width: 45%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footercontacto h2{
+        width: 100%;
+        font-size: 100%;
+        font-weight: 400;
+        text-align: center;
+        margin: 20px 0 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footercontacto img{
+        width: 35%;
+        border-radius: 10%;
+    }
+    .contactoCuerpo{
+        width: 90%;
+        align-items: center;
+        text-align: justify;
+    }
+    .contactoCuerpo p{
+        margin: 0 0 10px 0;
+        font-size: 80%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .convenio{
+        background-color: #ffffffa2;
+        color: rgb(0, 34, 146);
+        padding: 20px;
+        text-align: center;
+        z-index: -8;
+    }
+    .convenio h2{
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        z-index: -7;
+    }
+    .convenio div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0 10px  0;
+        z-index: -6;
+    }
+    .logoconvenio1,.logoconvenio2{
+        width: 13rem;
+        transition: .2s ease-in-out;
+    }
+    /**hoover*/
+    .logoconvenio1:hover,.logoconvenio2:hover{
+        /**iluminacion borde dark*/
+        box-shadow: 0 0 0 4px #0000009d;
+        border-radius: 50%;
+    
+    }
+    .direccionfooter{
+        width: 100%;
+        height: 500px;
+        background-color: #002f5a;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 6rem 0;
+    }
+    .footermapa{
+        width:45%;
+        height: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+    }
+    .footermapa h2{
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .footermapa iframe{
+        padding-top: 15px;
+        width: 100%;
+        height: 450px;
+        border-radius: 50px;
+    }
+    .footercontacto{
+        width: 45%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:300;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footercontacto h2{
+        width: 100%;
+        font-size: 90%;
+        font-weight: 400;
+        text-align: center;
+        margin: 20px 0 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .footercontacto img{
+        width: 12rem;
+        border-radius: 10%;
+    }
+    .contactoCuerpo{
+        width: 90%;
+        align-items: center;
+        text-align: justify;
+    }
+    .contactoCuerpo p{
+        margin: 0 0 10px 0;
+        font-size: 80%;
+    }
+}

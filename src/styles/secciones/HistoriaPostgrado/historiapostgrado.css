@@ -1,0 +1,204 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .historiapostgrado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulohistoria{
+        margin-top:20px;
+        font-size: 2rem;
+        color: #00255c;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .imagencontenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+    .imagencontenedor .imagenhistoriapostgrado{
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contenidohistoria{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #00255c;
+        font-weight: 500;
+        text-align: justify;
+        font-family: 'Roboto', sans-serif;
+        width: 80%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .historiapostgrado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulohistoria{
+        margin-top:35px;
+        font-size: 2rem;
+        color: #00255c;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .imagencontenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .imagencontenedor .imagenhistoriapostgrado{
+        width: 45%;
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contenidohistoria{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #00255c;
+        font-weight: 500;
+        text-align: justify;
+        font-family: 'Roboto', sans-serif;
+        width: 80%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .historiapostgrado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .titulohistoria{
+        margin-top:20px;
+        font-size: 2.2rem;
+        color: #00255c;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .imagencontenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .imagencontenedor .imagenhistoriapostgrado{
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contenidohistoria{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #00255c;
+        font-weight: 500;
+        text-align: justify;
+        font-family: 'Roboto', sans-serif;
+        width: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .historiapostgrado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+    }
+    .titulohistoria{
+        margin-top:15px;
+        font-size: 2rem;
+        color: #00255c;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .imagencontenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .imagencontenedor .imagenhistoriapostgrado{
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contenidohistoria{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #00255c;
+        font-weight: 500;
+        text-align: justify;
+        font-family: 'Roboto', sans-serif;
+        width: 80%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .historiapostgrado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+    }
+    .titulohistoria{
+        margin-top:15px;
+        font-size: 2rem;
+        color: #00255c;
+        font-weight: 600;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .imagencontenedor{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .imagencontenedor .imagenhistoriapostgrado{
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contenidohistoria{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        color: #00255c;
+        font-weight: 500;
+        text-align: justify;
+        font-family: 'Roboto', sans-serif;
+        width: 80%;
+    }
+}

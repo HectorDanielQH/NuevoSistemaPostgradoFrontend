@@ -1,0 +1,485 @@
+li{
+    list-style: none
+}
+a{
+    text-decoration: none;
+}
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+@keyframes radar{
+    /*borde exterior escala*/
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .barras{
+        /*degradado*/
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.75);
+        z-index: 1;
+        display: flex;
+        height: 60px;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .barras .boton{
+        background-color: rgba(211, 0, 0, 0);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: none;
+        transition: ease-in-out 0.3s;
+        font-size: 2rem;
+        margin: 0 15px;
+    }
+    .navegador-contenedor{
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        
+        z-index: 1;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+    }
+    .navegador-contenedor li >*{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        padding: 20px 10px;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-contenedor li ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: -25px 0 0px 0px;
+    }
+    .navegador-contenedor li ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        
+        color: rgb(0, 70, 131);
+        border: 1.5px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        font-size: .5rem;
+        padding: 15px 10px;
+        margin: 10px 0;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-ocultar{
+        display: none;
+    }
+    .navegador-mostrar{
+        display: block;
+    }
+    .linkfontawesome{
+        margin:0 10px;
+        padding:15px 0;
+        color:rgb(200, 0, 0)
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .barras{
+        /*degradado*/
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.75);
+        z-index: 1;
+        display: flex;
+        height: 60px;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .barras .boton{
+        background-color: rgba(211, 0, 0, 0);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: none;
+        transition: ease-in-out 0.3s;
+        font-size: 2rem;
+        margin: 0 15px;
+    }
+    .navegador-contenedor{
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        
+        z-index: 1;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+    }
+    .navegador-contenedor li >*{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        padding: 20px 10px;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-contenedor li ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: -25px 0 0px 0px;
+    }
+    .navegador-contenedor li ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border: none;
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        
+        color: rgb(0, 70, 131);
+        border: 1.5px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        font-size: .5rem;
+        padding: 15px 10px;
+        margin: 10px auto;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-ocultar{
+        display: none;
+    }
+    .navegador-mostrar{
+        display: block;
+    }
+    .linkfontawesome{
+        margin:0 10px;
+        padding:15px 0;
+        color:rgb(200, 0, 0)
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .barras{
+        /*degradado*/
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        z-index: 1;
+        display: flex;
+        height: 60px;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .barras .boton{
+        background-color: rgba(211, 0, 0, 0);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: none;
+        transition: ease-in-out 0.3s;
+        font-size: 2rem;
+        margin: 0 15px;
+    }
+    .navegador-contenedor{
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);   
+        
+        z-index: 1;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+    }
+    .navegador-contenedor li >*{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        padding: 20px 10px;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-contenedor li ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: -25px 0 0px 0px;
+    }
+    .navegador-contenedor li ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 70, 131);
+        border: 1.5px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        font-size: .5rem;
+        padding: 15px 10px;
+        margin: 20px auto;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-ocultar{
+        display: none;
+    }
+    .navegador-mostrar{
+        display: block;
+    }
+    .linkfontawesome{
+        margin:0 10px;
+        padding:15px 0;
+        color:rgb(200, 0, 0)
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .barras{
+        display: none;
+    }
+    .navegador-ocultar{
+        display: flex;
+    }
+    .navegador-contenedor{
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        
+        z-index: 1;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navegador-contenedor li >*{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+        font-size: .9rem;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-contenedor li >*:hover{
+        background-color: rgb(0, 70, 131);
+        color: rgb(255, 255, 255);
+    }
+    .navegador-contenedor li >*:hover li{
+        background-color: rgb(0, 70, 131);
+        color: rgb(255, 255, 255);
+    }
+    .navegador-contenedor li ul{
+        display: none;
+        flex-direction: column;
+        width: 20rem;
+        height: 400px;
+        margin: 0px 0 0px 0px;
+        position: absolute;
+        overflow-y: scroll;
+        background-color: rgb(0, 70, 131);
+    }
+    /*scrollbar*/
+    .navegador-contenedor li ul::-webkit-scrollbar {
+        width: 10px;
+    }
+    .navegador-contenedor li ul::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    .navegador-contenedor li ul::-webkit-scrollbar-thumb {
+        background: rgb(0, 41, 88);
+    }
+    .navegador-contenedor li ul::-webkit-scrollbar-thumb:hover {
+        background: rgb(177, 0, 0);
+    }
+    
+    .navegador-contenedor li ul li{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background-color: rgb(0, 70, 131);
+        color: rgb(0, 70, 131);
+        border: 1px solid rgb(0, 70, 131);
+        border-radius: 15px;
+        font-size: .5rem;
+        padding: 0px 0px;
+        margin: 10px 0;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-contenedor li ul li:hover a{
+        background-color: rgb(226, 0, 0);
+        border-radius: 15px;
+        /*replandor luz*/
+    }
+    .linkfontawesome{
+        margin:0 10px;
+        padding: 0px 0;
+        color:rgb(200, 0, 0);
+    }
+    .links{
+        height: 70px;
+    }
+    .links:hover .linkfontawesome{
+        color: rgb(255, 255, 255);
+    }
+    .links-li{
+        width: 10rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .barras{
+        display: none;
+    }
+    .navegador-ocultar{
+        display: flex;
+    }
+    .navegador-contenedor{
+        /*degradado*/
+        background: rgb(252, 252, 252);
+        background: linear-gradient(90deg, rgb(0, 47, 88) 0%, rgb(1, 23, 48) 100%);
+        
+        z-index: 1;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navegador-contenedor li >*{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+        font-size: .9rem;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-contenedor li >*:hover{
+        background-color: rgb(0, 70, 131);
+        color: rgb(255, 255, 255);
+    }
+    .navegador-contenedor li >*:hover li{
+        background-color: rgb(0, 70, 131);
+        color: rgb(255, 255, 255);
+    }
+    .navegador-contenedor li ul{
+        display: none;
+        flex-direction: column;
+        width: 20rem;
+        height: 400px;
+        margin: 0px 0 0px 0px;
+        position: absolute;
+        overflow-y: scroll;
+        background-color: rgb(0, 70, 131);
+    }
+    /*scrollbar*/
+    .navegador-contenedor li ul::-webkit-scrollbar {
+        width: 10px;
+    }
+    .navegador-contenedor li ul::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    .navegador-contenedor li ul::-webkit-scrollbar-thumb {
+        background: rgb(0, 41, 88);
+    }
+    .navegador-contenedor li ul::-webkit-scrollbar-thumb:hover {
+        background: rgb(177, 0, 0);
+    }
+    
+    .navegador-contenedor li ul li{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: none;
+        background-color: rgb(0, 70, 131);
+        color: rgb(0, 70, 131);
+        border: 1px solid rgb(0, 70, 131);
+        border-radius: 15px;
+        font-size: .5rem;
+        padding: 0px 0px;
+        margin: 10px 0;
+        transition: ease-in-out 0.3s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navegador-contenedor li ul li:hover a{
+        background-color: rgb(226, 0, 0);
+        color: rgb(255, 255, 255);
+        border-radius: 15px;
+        /*replandor luz*/
+    }
+    .linkfontawesome{
+        margin:0 10px;
+        padding: 0px 0;
+        color:rgb(200, 0, 0);
+    }
+    .links{
+        height: 70px;
+    }
+    .links:hover .linkfontawesome{
+        color: rgb(255, 255, 255);
+    }
+    .links-li{
+        width: 10rem;
+    }
+}

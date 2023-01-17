@@ -1,0 +1,140 @@
+@keyframes fondoBotonfooter{
+    /*linear efecto*/
+    100%{
+        filter: hue-rotate(-360deg);
+    }
+}
+.botones-footer{
+    opacity: .95;
+    z-index: 100;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .botones-footer{    
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 4px;
+        position: fixed;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+    }
+    .botones-footer .boton:nth-child(1),.boton:nth-child(2),.boton:nth-child(3),.boton:nth-child(4),.boton:nth-child(5){
+        border: none;
+        color: white;
+        font-size: .6rem;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .botones-footer .boton:hover{
+        animation: fondoBotonfooter 1.5s linear;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .botones-footer{    
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        gap: 4px;
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+    }
+    .botones-footer .boton:nth-child(1),.boton:nth-child(2),.boton:nth-child(3),.boton:nth-child(4),.boton:nth-child(5){
+        border: none;
+        color: white;
+        font-size: .8rem;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .botones-footer .boton:hover{
+        animation: fondoBotonfooter 1.5s linear;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .botones-footer{    
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+    }
+    .botones-footer .boton:nth-child(1),.boton:nth-child(2),.boton:nth-child(3),.boton:nth-child(4),.boton:nth-child(5){
+        border: none;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .botones-footer .boton:hover{
+        animation: fondoBotonfooter 1.5s linear;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .botones-footer{    
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        position: fixed;
+        bottom: 10px;
+        gap: 8px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+    }
+    .botones-footer .boton:nth-child(1),.boton:nth-child(2),.boton:nth-child(3),.boton:nth-child(4),.boton:nth-child(5){
+        border: none;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .botones-footer .boton:hover{
+        animation: fondoBotonfooter 1.5s linear;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .botones-footer{    
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        position: fixed;
+        bottom: 15px;
+        gap: 8px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        padding: 0 10px;
+    }
+    .botones-footer .boton:nth-child(1),.boton:nth-child(2),.boton:nth-child(3),.boton:nth-child(4),.boton:nth-child(5){
+        border: none;
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .botones-footer .boton:hover{
+        animation: fondoBotonfooter 1.5s linear;
+    }
+}
