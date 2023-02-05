@@ -8,12 +8,14 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Imagen from '../images/uatfpostgrado.webp';
+import { useParams } from 'react-router-dom';
 
 function Doctorados(){
     const [cursos, setCursos] = useState([]);
     const [loading, setLoading] = useState(true);
+    const {id}=useParams();
     useEffect(() => {
-        axios.get('https://administrativos.uatfpostgrado.edu.bo/api/doctorados')
+        axios.get('https://administrativos.uatfpostgrado.edu.bo/api/doctorados/'+id)
         .then((response) => {
             setCursos(response.data);
             setLoading(false);
@@ -21,7 +23,9 @@ function Doctorados(){
         .catch((error) => {
             console.log(error);
         })
-    }, []);
+    }, [
+        id
+    ]);
     
     return(
         <div className='contenedorprograma'>
@@ -57,13 +61,13 @@ function Doctorados(){
                                         <div className='cardcontenedorbotoninscripcion'>
                                             <div>
                                                 <Link to={
-                                                    '/doctorados/'+curso.id
+                                                    '/doctorado/'+curso.id
                                                 }>
                                                     {'Inscribirse'}
                                                     <ion-icon name="arrow-forward"></ion-icon>
                                                 </Link>
                                                 <Link to={
-                                                    '/doctorados/'+curso.id
+                                                    '/doctorado/'+curso.id
                                                 }>
                                                     {'Más información'}
                                                     <ion-icon name="arrow-forward"></ion-icon>

@@ -8,12 +8,14 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Imagen from '../images/uatfpostgrado.webp';
+import { useParams } from 'react-router-dom';
 
 function Diplomados(){
     const [cursos, setCursos] = useState([]);
     const [loading, setLoading] = useState(true);
+    const {id}=useParams();
     useEffect(() => {
-        axios.get('https://administrativos.uatfpostgrado.edu.bo/api/diplomados')
+        axios.get('https://administrativos.uatfpostgrado.edu.bo/api/diplomados/'+id)
         .then((response) => {
             setCursos(response.data);
             setLoading(false);
@@ -21,7 +23,9 @@ function Diplomados(){
         .catch((error) => {
             console.log(error);
         })
-    }, []);
+    }, [
+        id
+    ]);
     return(
         <div className='contenedorprograma'>
             
@@ -56,13 +60,13 @@ function Diplomados(){
                                         <div className='cardcontenedorbotoninscripcion'>
                                             <div>
                                                 <Link to={
-                                                    '/diplomados/'+curso.id
+                                                    '/diplomado/'+curso.id
                                                 }>
                                                     {'Inscribirse'}
                                                     <ion-icon name="arrow-forward"></ion-icon>
                                                 </Link>
                                                 <Link to={
-                                                    '/diplomados/'+curso.id
+                                                    '/diplomado/'+curso.id
                                                 }>
                                                     {'Más información'}
                                                     <ion-icon name="arrow-forward"></ion-icon>
@@ -111,7 +115,7 @@ function Diplomados(){
                     }}
                 >
                     <h2>
-                        {'No hay Doctorados disponibles'}
+                        {'No hay Diplomados disponibles'}
                     </h2>
                 </div>
             }

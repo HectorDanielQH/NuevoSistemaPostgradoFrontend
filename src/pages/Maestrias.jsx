@@ -8,11 +8,14 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Imagen from '../images/uatfpostgrado.webp';
+import { useParams } from 'react-router-dom';
+
 function Maestrias(){
     const [cursos, setCursos] = useState([]);
     const [loading, setLoading] = useState(true);
+    const {id}=useParams();
     useEffect(() => {
-        axios.get('https://administrativos.uatfpostgrado.edu.bo/api/maestrias')
+        axios.get('https://administrativos.uatfpostgrado.edu.bo/api/maestrias/'+id)
         .then((response) => {
             setCursos(response.data);
             setLoading(false);
@@ -20,7 +23,9 @@ function Maestrias(){
         .catch((error) => {
             console.log(error);
         })
-    }, []);
+    }, [
+        id
+    ]);
     return(
         <div className='contenedorprograma'>
             
@@ -55,13 +60,13 @@ function Maestrias(){
                                         <div className='cardcontenedorbotoninscripcion'>
                                             <div>
                                                 <Link to={
-                                                    '/maestrias/'+curso.id
+                                                    '/maestria/'+curso.id
                                                 }>
                                                     {'Inscribirse'}
                                                     <ion-icon name="arrow-forward"></ion-icon>
                                                 </Link>
                                                 <Link to={
-                                                    '/maestrias/'+curso.id
+                                                    '/maestria/'+curso.id
                                                 }>
                                                     {'Más información'}
                                                     <ion-icon name="arrow-forward"></ion-icon>

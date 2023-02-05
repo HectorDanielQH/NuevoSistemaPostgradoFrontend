@@ -1,0 +1,550 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cardsfacultades{
+        width: 95%;
+        margin: 2rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .cardfacultad{
+        width: 20rem;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardfacultad .imagendeareasconocimiento{
+        height: 200px;
+    }
+    .cardfacultad h2{
+        font-size: 1.2rem;
+        margin: 20px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    .tituloareaconocimiento{
+        width: 100%;
+        margin: 2rem auto; 
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: rgba(168, 0, 0, 0.733);
+        padding: 1rem 0;
+        color: white;
+    }
+    .fondoemergentefacultad,.fondoemergentefacultad1,.fondoemergentefacultad2,.fondoemergentefacultad3,.fondoemergentefacultad4,
+    .fondoemergentefacultad5,.fondoemergentefacultad6,.fondoemergentefacultad7,.fondoemergentefacultad8,
+    .fondoemergentefacultad9,.fondoemergentefacultad10,.fondoemergentefacultad11,.fondoemergentefacultad12{
+        background-color: rgba(0, 0, 0, 0.479);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+    .recuadro{
+        width: 90%;
+        height: 50%;
+        overflow-y: scroll;
+        background-color: rgb(255, 255, 255);
+        z-index: 101;
+    }
+    .recuadro div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       
+        background-color: rgb(168, 0, 0);
+    }
+    .recuadro div h1{
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        margin: .5rem 1rem;  
+        color: rgba(255, 255, 255, 0.904);
+        text-shadow: none;
+    }
+    .recuadro div button{
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.904);
+        cursor: pointer;
+        padding: .7rem 1.3rem;
+        transition: .2s ease-in;
+    }
+    .recuadro div button:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+    }
+    .recuadro ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .recuadro ul li{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .4rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: .2s ease-in;
+    }
+    .recuadro ul li:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+        color: white;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cardsfacultades{
+        width: 95%;
+        margin: 2rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .cardfacultad{
+        width: 20rem;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardfacultad .imagendeareasconocimiento{
+        height: 200px;
+    }
+    .cardfacultad h2{
+        font-size: 1.2rem;
+        margin: 20px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    .tituloareaconocimiento{
+        width: 100%;
+        margin: 2rem auto; 
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: rgba(168, 0, 0, 0.733);
+        padding: 1rem 0;
+        color: white;
+    }
+    .fondoemergentefacultad,.fondoemergentefacultad1,.fondoemergentefacultad2,.fondoemergentefacultad3,.fondoemergentefacultad4,
+    .fondoemergentefacultad5,.fondoemergentefacultad6,.fondoemergentefacultad7,.fondoemergentefacultad8,
+    .fondoemergentefacultad9,.fondoemergentefacultad10,.fondoemergentefacultad11,.fondoemergentefacultad12{
+        background-color: rgba(0, 0, 0, 0.479);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+    .recuadro{
+        width: 90%;
+        height: 50%;
+        overflow-y: scroll;
+        background-color: rgb(255, 255, 255);
+        z-index: 101;
+    }
+    .recuadro div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       
+        background-color: rgb(168, 0, 0);
+    }
+    .recuadro div h1{
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        margin: .5rem 1rem;  
+        color: rgba(255, 255, 255, 0.904);
+        text-shadow: none;
+    }
+    .recuadro div button{
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.904);
+        cursor: pointer;
+        padding: .7rem 1.3rem;
+        transition: .2s ease-in;
+    }
+    .recuadro div button:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+    }
+    .recuadro ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .recuadro ul li{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .4rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: .2s ease-in;
+    }
+    .recuadro ul li:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+        color: white;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .cardsfacultades{
+        width: 95%;
+        margin: 2rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .cardfacultad{
+        width: 20rem;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardfacultad .imagendeareasconocimiento{
+        height: 200px;
+    }
+    .cardfacultad h2{
+        font-size: 1.2rem;
+        margin: 20px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    .tituloareaconocimiento{
+        width: 100%;
+        margin: 2rem auto; 
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: rgba(168, 0, 0, 0.733);
+        padding: 1rem 0;
+        color: white;
+    }
+    .fondoemergentefacultad,.fondoemergentefacultad1,.fondoemergentefacultad2,.fondoemergentefacultad3,.fondoemergentefacultad4,
+    .fondoemergentefacultad5,.fondoemergentefacultad6,.fondoemergentefacultad7,.fondoemergentefacultad8,
+    .fondoemergentefacultad9,.fondoemergentefacultad10,.fondoemergentefacultad11,.fondoemergentefacultad12{
+        background-color: rgba(0, 0, 0, 0.479);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .recuadro{
+        width: 35rem;
+        background-color: rgb(255, 255, 255);
+        z-index: 101;
+    }
+    .recuadro div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       
+        background-color: rgb(168, 0, 0);
+    }
+    .recuadro div h1{
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        margin: .5rem 1rem;  
+        color: rgba(255, 255, 255, 0.904);
+        text-shadow: none;
+    }
+    .recuadro div button{
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.904);
+        cursor: pointer;
+        padding: .7rem 1.3rem;
+        transition: .2s ease-in;
+    }
+    .recuadro div button:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+    }
+    .recuadro ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .recuadro ul li{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .4rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: .2s ease-in;
+    }
+    .recuadro ul li:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+        color: white;
+        transform: scale(1.05);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .cardsfacultades{
+        width: 95%;
+        margin: 2rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        z-index: 900;
+    }
+    .cardfacultad{
+        width: 20rem;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardfacultad .imagendeareasconocimiento{
+        height: 200px;
+    }
+    .cardfacultad h2{
+        font-size: 1.2rem;
+        margin: 20px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    .tituloareaconocimiento{
+        width: 100%;
+        margin: 2rem auto; 
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: rgba(168, 0, 0, 0.733);
+        padding: 1rem 0;
+        color: white;
+    }
+    .fondoemergentefacultad,.fondoemergentefacultad1,.fondoemergentefacultad2,.fondoemergentefacultad3,.fondoemergentefacultad4,
+    .fondoemergentefacultad5,.fondoemergentefacultad6,.fondoemergentefacultad7,.fondoemergentefacultad8,
+    .fondoemergentefacultad9,.fondoemergentefacultad10,.fondoemergentefacultad11,.fondoemergentefacultad12{
+        background-color: rgba(0, 0, 0, 0.479);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .recuadro{
+        width: 35rem;
+        height: 50%;
+        overflow-x: hidden;
+        background-color: rgb(255, 255, 255);
+        z-index: 101;
+    }
+    .recuadro div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       
+        background-color: rgb(168, 0, 0);
+    }
+    .recuadro div h1{
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        margin: .5rem 1rem;  
+        color: rgba(255, 255, 255, 0.904);
+        text-shadow: none;
+    }
+    .recuadro div button{
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.904);
+        cursor: pointer;
+        padding: .7rem 1.3rem;
+        transition: .2s ease-in;
+    }
+    .recuadro div button:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+    }
+    .recuadro ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .recuadro ul li{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .4rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: .2s ease-in;
+    }
+    .recuadro ul li:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+        color: white;
+        transform: scale(1.05);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .cardsfacultades{
+        width: 95%;
+        margin: 2rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .cardfacultad{
+        width: 20rem;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: .2s ease-in;
+    }
+    .cardfacultad:hover{
+        transform: scale(1.1);
+    }
+    .cardfacultad .imagendeareasconocimiento{
+        height: 200px;
+    }
+    .cardfacultad h2{
+        font-size: 1.2rem;
+        margin: 20px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    .tituloareaconocimiento{
+        width: 100%;
+        margin: 2rem auto; 
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: rgba(168, 0, 0, 0.733);
+        padding: 1rem 0;
+        color: white;
+    }
+    .fondoemergentefacultad,.fondoemergentefacultad1,.fondoemergentefacultad2,.fondoemergentefacultad3,.fondoemergentefacultad4,
+    .fondoemergentefacultad5,.fondoemergentefacultad6,.fondoemergentefacultad7,.fondoemergentefacultad8,
+    .fondoemergentefacultad9,.fondoemergentefacultad10,.fondoemergentefacultad11,.fondoemergentefacultad12{
+        background-color: rgba(0, 0, 0, 0.479);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .recuadro{
+        width: 35rem;
+        background-color: rgb(255, 255, 255);
+        z-index: 101;
+    }
+    .recuadro div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       
+        background-color: rgb(168, 0, 0);
+    }
+    .recuadro div h1{
+        font-size: 1.2rem;
+        width: 100%;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        margin: .5rem 1rem;  
+        color: rgba(255, 255, 255, 0.904);
+        text-shadow: none;
+    }
+    .recuadro div button{
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.904);
+        cursor: pointer;
+        padding: .7rem 1.3rem;
+        transition: .2s ease-in;
+    }
+    .recuadro div button:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+    }
+    .recuadro ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .recuadro ul li{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .4rem 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: .2s ease-in;
+    }
+    .recuadro ul li:hover{
+        background-color: rgba(0, 49, 82, 0.904);
+        color: white;
+        transform: scale(1.05);
+    }
+}

@@ -8,12 +8,14 @@ import { Link } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Imagen from '../images/uatfpostgrado.webp';
+import { useParams } from 'react-router-dom';
 
 function Cursos(){
     const [cursos, setCursos] = useState([]);
     const [loading, setLoading] = useState(true);
+    const {id}=useParams();
     useEffect(() => {
-        axios.get('https://administrativos.uatfpostgrado.edu.bo/api/cursos')
+        axios.get('https://administrativos.uatfpostgrado.edu.bo/api/cursos/'+id)
         .then((response) => {
             setCursos(response.data);
             setLoading(false);
@@ -21,7 +23,9 @@ function Cursos(){
         .catch((error) => {
             console.log(error);
         })
-    }, []);
+    }, [
+        id
+    ]);
     return(
         <div className='contenedorprograma'>
             
@@ -56,7 +60,7 @@ function Cursos(){
                                         <div className='cardcontenedorbotoninscripcion'>
                                             <div>
                                                 <Link to={
-                                                    '/cursos/'+curso.id
+                                                    '/curso/'+curso.id
                                                 }>
                                                     {'Más información'}
                                                     <ion-icon name="arrow-forward"></ion-icon>

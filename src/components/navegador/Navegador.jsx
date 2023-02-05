@@ -148,7 +148,7 @@ function Navegador(){
                     <ul style={
                         showMenu2 ? {display:'block'} : {display:'none'}
                     }>
-                        <li><Link to="/doctorados" onClick={
+                        <li><Link to="/AreaDeConocimiento/doctorados" onClick={
                             ()=>{
                                 setShowMenu2(false);
                                 if(window.innerWidth <= 992){
@@ -158,7 +158,7 @@ function Navegador(){
                         }>
                             <FontAwesomeIcon icon={faGraduationCap} style={{margin:'0 10px' }}/>
                             Doctorados</Link></li>
-                        <li><Link to="/maestrias" onClick={
+                        <li><Link to="/AreaDeConocimiento/maestrias" onClick={
                             ()=>{
                                 setShowMenu2(false);
                                 if(window.innerWidth <= 992){
@@ -168,7 +168,7 @@ function Navegador(){
                         }>
                             <FontAwesomeIcon icon={faGraduationCap} style={{margin:'0 10px' }}/>
                             Maestrías</Link></li>
-                        <li><Link to="/especialidades" onClick={
+                        <li><Link to="/AreaDeConocimiento/especialidades" onClick={
                             ()=>{
                                 setShowMenu2(false);
                                 if(window.innerWidth <= 992){
@@ -178,7 +178,7 @@ function Navegador(){
                         }>
                             <FontAwesomeIcon icon={faGraduationCap} style={{margin:'0 10px' }}/>
                             Especialidades</Link></li>
-                        <li><Link to="/diplomados" onClick={
+                        <li><Link to="/AreaDeConocimiento/diplomados" onClick={
                             ()=>{
                                 setShowMenu2(false);
                                 if(window.innerWidth <= 992){
@@ -188,7 +188,7 @@ function Navegador(){
                         }>
                             <FontAwesomeIcon icon={faGraduationCap} style={{margin:'0 10px' }}/>
                             Diplomados</Link></li>
-                        <li><Link to="/cursos" onClick={
+                        <li><Link to="/AreaDeConocimiento/cursos" onClick={
                             ()=>{
                                 setShowMenu2(false);
                                 if(window.innerWidth <= 992){

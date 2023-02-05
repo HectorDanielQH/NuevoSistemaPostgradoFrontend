@@ -15,6 +15,8 @@ import Maestrias from "./pages/Maestrias";
 import Doctorados from "./pages/Doctorados";
 import Especialidades from "./pages/Especialidades";
 import DetallePrograma from "./pages/DetallePrograma";
+import AreaDeConocimiento from "./pages/AreaDeConocimiento";
+import Skeleton from "react-loading-skeleton";
 function App() {
   return (
     <div className="App">
@@ -22,17 +24,18 @@ function App() {
       <Router>
         <Navegador />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/mensajedirector" element={<MensajeDirector />} />
-          <Route path="/historiapostgrado" element={<Historiapostgrado />} />
-          <Route path="/consejoPostgrado" element={<ConsejoPostgrado />} />
-          <Route path="/areasfuncionales" element={<AreasFuncionales/>} />
-          <Route path="/cursos" element={<Cursos/>} />
-          <Route path="/diplomados" element={<Diplomados/>} />
-          <Route path="/especialidades" element={<Especialidades/>} />
-          <Route path="/maestrias" element={<Maestrias/>} />
-          <Route path="/doctorados" element={<Doctorados/>} />
-          <Route path="/:tipoprograma/:id" element={<DetallePrograma />} />
+          <Route path="/" element={<Home />||<Skeleton/>} />
+          <Route path="/mensajedirector" element={<MensajeDirector /> ||<Skeleton/>} />
+          <Route path="/historiapostgrado" element={<Historiapostgrado /> ||<Skeleton/>} />
+          <Route path="/consejoPostgrado" element={<ConsejoPostgrado /> ||<Skeleton/>} />
+          <Route path="/areasfuncionales" element={<AreasFuncionales/> ||<Skeleton/>} />
+          <Route path="/cursos/:id" element={<Cursos/> ||<Skeleton/>} />
+          <Route path="/diplomados/:id" element={<Diplomados/> ||<Skeleton/>} />
+          <Route path="/especialidades/:id" element={<Especialidades/> ||<Skeleton/>} />
+          <Route path="/maestrias/:id" element={<Maestrias/> ||<Skeleton/>} />
+          <Route path="/doctorados/:id" element={<Doctorados/> ||<Skeleton/>} />
+          <Route path="/AreaDeConocimiento/:programa" element={<AreaDeConocimiento/> ||<Skeleton/>} />
+          <Route path="/:tipoprograma/:id" element={<DetallePrograma /> ||<Skeleton/>} />
         </Routes>
         <Botones />
       </Router>

@@ -8,31 +8,31 @@ function Botones(){
             <button className="boton" style={{
                 background:"linear-gradient(90deg, rgb(151, 91, 0) 0%, rgb(228, 156, 0)  100%)"
             }} onClick={
-                () => navigate('/doctorados')
+                () => navigate('/AreaDeConocimiento/doctorados')
             }>
                 Doctorados</button>
             <button className="boton" style={{
                 background:"linear-gradient(90deg, rgb(0, 33, 71) 0%, rgb(0, 74, 158) 100%)"
             }} onClick={
-                () => navigate('/maestrias')
+                () => navigate('/AreaDeConocimiento/maestrias')
             }>
             Maestrías</button>
             <button className="boton" style={{
                 background:"linear-gradient(90deg, rgb(0, 97, 13) 0%, rgb(43, 151, 0) 100%)",
             }} onClick={
-                () => navigate('/especialidades')
+                () => navigate('/AreaDeConocimiento/especialidades')
             }>
             Especialidades</button>
             <button className="boton" style={{
                 background:"linear-gradient(90deg, rgb(0, 109, 117) 0%, rgb(0, 163, 212) 100%)"
             }} onClick={
-                () => navigate('/diplomados')
+                () => navigate('/AreaDeConocimiento/diplomados')
             }>
             Diplomados</button>
             <button className="boton" style={{
                 background:"linear-gradient(90deg, rgb(160, 0, 0) 0%, rgb(214, 0, 0) 100%)",
             }} onClick={
-                () => navigate('/cursos')
+                () => navigate('/AreaDeConocimiento/cursos')
             }>
             Cursos</button>
         </div>        
