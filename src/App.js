@@ -8,7 +8,6 @@ import Footer from "./components/footer/Footer";
 import MensajeDirector from "./pages/MensajeDirector";
 import Historiapostgrado from "./pages/HistoriaPostgrado";
 import ConsejoPostgrado from "./pages/ConsejoPostgrado";
-import AreasFuncionales from "./pages/AreasFuncionales";
 import Cursos from "./pages/Cursos";
 import Diplomados from "./pages/Diplomados";
 import Maestrias from "./pages/Maestrias";
@@ -26,7 +25,6 @@ function App() {
           <Route path="/mensajedirector" element={<MensajeDirector />} />
           <Route path="/historiapostgrado" element={<Historiapostgrado />} />
           <Route path="/consejoPostgrado" element={<ConsejoPostgrado />} />
-          <Route path="/areasfuncionales" element={<AreasFuncionales/>} />
           <Route path="/cursos" element={<Cursos/>} />
           <Route path="/diplomados" element={<Diplomados/>} />
           <Route path="/especialidades" element={<Especialidades/>} />
