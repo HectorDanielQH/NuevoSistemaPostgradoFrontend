@@ -29,7 +29,6 @@ function Cursos(){
                 src={Audio}
                 playing={true}
                 loop={false}
-                volume={0.5}
             />
             <h1>CURSOS</h1>
             {

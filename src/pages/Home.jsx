@@ -14,13 +14,14 @@ function Home(){
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
     const [show4, setShow4] = useState(false);
+    const [show5, setShow5] = useState(true);
     return(
         <div>
             <ReactHowler
                 src={Audio}
-                playing={true}
+                playing={show5}
                 loop={false}
-                volume={0.5}
+                volume={0.8}
             />
             {
                 <AlertaUno />
@@ -147,7 +148,10 @@ function Home(){
                     ></iframe>
                     <div className='seccionGrid'>
                         <div className='card' onClick={
-                            () => setShow(true)
+                            () => {
+                                setShow(true)
+                                setShow5(false)
+                            }  
                         }>
                             <p><ion-icon name="ribbon-outline" style={{
                                 fontSize: '2.5rem',
@@ -158,7 +162,10 @@ function Home(){
                             <h1>OBJETIVO</h1>
                         </div>
                         <div className='card' onClick={
-                            () => setShow2(true)
+                            () => {
+                                setShow2(true)
+                                setShow5(false)
+                            }  
                         }>
                             <p><ion-icon name="school-outline" style={{
                                 fontSize: '2.5rem',
@@ -167,7 +174,10 @@ function Home(){
                             <h1>MISIÓN</h1>
                         </div>
                         <div className='card' onClick={
-                            () => setShow3(true)
+                            () => {
+                                setShow3(true)
+                                setShow5(false)
+                            }  
                         }
                         >
                             <ion-icon name="eye" style={{
@@ -177,7 +187,10 @@ function Home(){
                             <h1>VISIÓN</h1>
                         </div>
                         <div className='card' onClick={
-                            () => setShow4(true)
+                            () => {
+                                setShow4(true)
+                                setShow5(false)
+                            }  
                         }>
                             <ion-icon name="rocket" style={{
                                 fontSize: '2.5rem',

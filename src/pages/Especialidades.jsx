@@ -29,7 +29,6 @@ function Especialidades(){
                 src={Audio}
                 playing={true}
                 loop={false}
-                volume={0.5}
             />
             <h1>ESPECIALIDADES</h1>
             {

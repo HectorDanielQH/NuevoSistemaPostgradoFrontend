@@ -29,7 +29,6 @@ function Diplomados(){
                 src={Audio}
                 playing={true}
                 loop={false}
-                volume={0.5}
             />
             <h1>DIPLOMADOS</h1>
             {
