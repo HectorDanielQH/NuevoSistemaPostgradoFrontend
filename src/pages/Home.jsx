@@ -6,6 +6,9 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import AlertaUno from '../components/alerts/alertuno';
+import ReactHowler from 'react-howler'
+import Audio from '../audio/bienvenida.mp3'
+
 function Home(){
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
@@ -13,6 +16,12 @@ function Home(){
     const [show4, setShow4] = useState(false);
     return(
         <div>
+            <ReactHowler
+                src={Audio}
+                playing={true}
+                loop={false}
+                volume={0.5}
+            />
             {
                 <AlertaUno />
                 ||
