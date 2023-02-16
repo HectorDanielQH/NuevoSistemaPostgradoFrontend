@@ -14,6 +14,7 @@ import Maestrias from "./pages/Maestrias";
 import Doctorados from "./pages/Doctorados";
 import Especialidades from "./pages/Especialidades";
 import DetallePrograma from "./pages/DetallePrograma";
+
 function App() {
   return (
     <div className="App">

@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Imagen from '../images/uatfpostgrado.webp';
-
+import ReactHowler from 'react-howler'
+import Audio from '../audio/cursos.mp3'
 function Cursos(){
     const [cursos, setCursos] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -24,7 +25,11 @@ function Cursos(){
     }, []);
     return(
         <div className='contenedorprograma'>
-            
+            <ReactHowler
+                src={Audio}
+                playing={true}
+                loop={false}
+            />
             <h1>CURSOS</h1>
             {
                 loading ? 

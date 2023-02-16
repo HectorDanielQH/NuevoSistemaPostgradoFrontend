@@ -8,7 +8,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Imagen from '../images/uatfpostgrado.webp';
-
+import ReactHowler from 'react-howler'
+import Audio from '../audio/displomados.mp3'
 function Diplomados(){
     const [cursos, setCursos] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -24,7 +25,11 @@ function Diplomados(){
     }, []);
     return(
         <div className='contenedorprograma'>
-            
+            <ReactHowler
+                src={Audio}
+                playing={true}
+                loop={false}
+            />
             <h1>DIPLOMADOS</h1>
             {
                 loading ? 

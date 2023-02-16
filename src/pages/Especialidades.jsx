@@ -8,7 +8,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Imagen from '../images/uatfpostgrado.webp';
-
+import ReactHowler from 'react-howler';
+import Audio from '../audio/especialidades.mp3';
 function Especialidades(){
     const [cursos, setCursos] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -24,7 +25,11 @@ function Especialidades(){
     }, []);
     return(
         <div className='contenedorprograma'>
-            
+            <ReactHowler
+                src={Audio}
+                playing={true}
+                loop={false}
+            />
             <h1>ESPECIALIDADES</h1>
             {
                 loading ? 
